@@ -1,0 +1,258 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+header, section, footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Arial;
+}
+.container{
+	width: 100%;
+	max-width: 550px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 5px;
+	box-sizing: border-box;
+}
+img{
+	max-width: 100%;
+}
+/*-------------------------------------------HEADER*/
+h1{
+	text-transform: uppercase;
+	color: #979797;
+	font-size: 1.5em;
+	text-align: center;
+}
+header p{
+	color: #979797;
+	font-size: 0.9em;
+	text-align: center;
+	margin-bottom: 13px;
+}
+header img{
+	margin: 5px;
+}
+/*--------------------------------------------COURSE + form*/
+.course h2{
+	color: #0524BC;
+	font-size: 1.4em;
+	text-align: center;
+}
+.course .container > h3{
+	color: #0524BC;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	text-align: center;
+}
+.course .container > p{
+	color: #979797;
+	font-size: 1em;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.form-block{
+	max-width: 400px;
+	width: 100%;
+	display: flex;
+    flex-direction: column;
+}
+.form-block > img{
+	width: 100%;
+}
+.form-block > img:hover{
+	cursor: pointer;
+	opacity: 0.8;
+}
+form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: #989898;
+	margin-bottom: 30px;
+}
+form > input{
+	width: 90%;
+    height: 35px;
+    margin-top: 18px;
+    padding-left: 10px;
+    font-size: 1em;
+    color: #989898;
+}
+.agreement{
+	width: 90%;
+	display: flex;
+	margin: 18px 0 18px -10px;
+}
+.agreement label{
+	color: #ffffff;
+	margin-left: 12px;
+	margin-top: 2px;
+	font-size: 0.8em;
+	line-height: 15px;
+}
+.checkbox:after{
+	width: 6px;
+    height: 6px;
+    position: relative;
+    background-color: #ffffff;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 6px solid #ffffff;
+}
+.checkbox:checked:after{
+	width: 6px;
+    height: 6px;
+    position: relative;
+    background-color: #000000;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 6px solid #ffffff;
+}
+button{
+	width: 100%;
+	background-color: #0524BC;
+	color: white;
+	border: none;
+	cursor: pointer;
+	outline:0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+button h3{
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 15px;
+}
+button p{
+	font-size: 1.3em;
+	text-align: center;
+	width: 80%;
+	margin-bottom: 10px;
+}
+/*----------------------------------------------DIPLOM*/
+#diplom h2{
+	text-align: center;
+	color: #0524BC;
+	font-size: 1.2em;
+	margin-bottom: 7px;
+}
+#diplom p{
+	text-align: justify;
+	color: #989898;
+	margin-bottom: 15px;
+}
+.image-description{
+	font-size: 0.8em;
+	text-align: center!important;
+}
+/*----------------------------------------------KNOWLEDGE*/
+#knowledge h2{
+	text-align: center;
+	color: #0524BC;
+	font-size: 1.2em;
+	margin-bottom: 7px;
+}
+#knowledge img{
+	margin-bottom: 15px;
+}
+#knowledge p{
+	text-align: justify;
+	color: #989898;
+	margin-bottom: 15px;
+}
+.image-description{
+	font-size: 0.8em;
+}
+/*------------------------------------------------SOCIAL*/
+.social{
+	max-width: 420px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 15px;
+}
+.social img{
+	height: auto;
+	width: 11.5%;
+	cursor: pointer;
+}
+/*-------------------------------------------------FOOTER*/
+footer{
+	background-color: #989898;
+	display: flex;
+	justify-content: center;
+	padding-top: 11px;
+}
+footer .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+footer menu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+footer menu a{
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-bottom: 11px;
+}
+footer .container p{
+	color: #ffffff;
+	font-size: 0.8em;
+}
+
+/*-------------------------------------------------MODAL VIDEO*/
+
+#modal-video{
+	z-index:9998;
+    position:fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    width:100%; 
+    height:100%;
+    top:0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#modal-video img{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+}
+#modal-video iframe{
+	max-width: 700px;
+	max-height: 400px;
+}
+
+/*-------------------------------------------------ADAPTVE*/
+@media (max-width: 500px) {
+  .container{
+  	padding: 0 15px;
+  }
+  .social{
+  	height: 35px;
+  }
+  .social img{
+	height: 100%;
+	width: 11.5%;
+	cursor: pointer;
+  }
+}
+/*
+#0524BC синий
+#989898 серый
+*/

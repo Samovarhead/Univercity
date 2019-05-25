@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Task</title>
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<script src="jquery-3.4.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<img src="images/logo.png" alt="logo">
+			<h1>новый бизнес университет</h1>
+			<p>Международный Центр Дистанционного Образования</p>
+		</div>
+	</header>
+
+	<section class="course">
+		<div class="container">
+			<h2>Полный курс кулинарного дела</h2>
+			<h3>кулинар - эксперт</h3>
+			<p>Повар 6-го разряда</p>
+			<div class="form-block">
+				<img src="images/video.png" alt="player" onclick="modalPlayerOpen();">
+				<form action="#">
+					<input type="text" name="Name" placeholder="Имя" required="true">
+					<input type="email" name="Mail" placeholder="Email" required="true">
+					<div class="agreement">
+						<input type="checkbox" class="checkbox" name="Agreement" required="true">
+						<label for="checkbox">Согласие на обработку персональных данных</label>
+					</div>
+					<button>
+						<h3>Начать обучение бесплатно</h3>
+						<p>и посмотреть свой будущий дипом сегодня 25.04.2019</p>
+					</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section id="diplom">
+		<div class="container">
+			<h2>Получи официальный гос. Диплом с международным приложением в кратчайшие сроки</h2>
+			<p>Этот содержательный курс даст вам именно те знания, которые вы ищете. Он поможет вам обрести уверенность и стать более компетенным в своей сфере. Не откладывайте ваше развитие и профессиональный рост на потом - запишитесь на курс, и</p>
+			<a data-fancybox="gallery" href="images/licensy_1.png"><img src="images/licensy_1.png"></a>
+			<p class="image-description">Лицензия на образовательную деятельность №038379</p>
+			<a data-fancybox="gallery" href="images/licensy_2.png"><img src="images/licensy_2.png"></a>
+			<p class="image-description">Лицензия на образовательную деятельность №038379</p>
+			<a data-fancybox="gallery" href="images/licensy_3.png"><img src="images/licensy_3.png"></a>
+			<p class="image-description">Лицензия на образовательную деятельность №038379</p>
+		</div>
+	</section>
+
+	<section id="knowledge">
+		<div class="container">
+			<h2>Осваивай новые знания быстрее и проще на современной <span>слайд</span> платформе обучения</h2>
+			<p>Этот содержательный курс даст вам именно те знания, которые вы ищете. Он поможет вам обрести уверенность и стать более компетенным в своей сфере. Не откладывайте ваше развитие и профессиональный рост на потом - запишитесь на курс, и</p>
+			<a data-fancybox="gallery" href="images/screens.png"><img src="images/licensy_2.png"></a>
+			<p>Этот содержательный курс даст вам именно те знания, которые вы ищете. Он поможет вам обрести уверенность и стать более компетенным в своей сфере. Не откладывайте ваше развитие и профессиональный рост на потом - запишитесь на курс, и</p>
+		</div>
+	</section>
+
+	<section class="course">
+		<div class="container">
+			<h2>Полный курс кулинарного дела</h2>
+			<h3>кулинар - эксперт</h3>
+			<p>Повар 6-го разряда</p>
+			<div class="form-block">
+				<img src="images/video.png" alt="player" onclick="modalPlayerOpen();">
+				<form action="#">
+					<input type="text" name="Name" placeholder="Имя" required="true">
+					<input type="email" name="Mail" placeholder="Email" required="true">
+					<div class="agreement">
+						<input type="checkbox" class="checkbox" name="Agreement" required="true">
+						<label for="checkbox">Согласие на обработку персональных данных</label>
+					</div>
+					<button>
+						<h3>Начать обучение бесплатно</h3>
+						<p>и посмотреть свой будущий дипом сегодня 25.04.2019</p>
+					</button>
+				</form>
+			</div>
+			<div class="social">
+				<img src="images/facebook.png" alt="fb-icon" onclick="window.open('https://google.com')">
+				<img src="images/vkontakte.png" alt="vk-icon" onclick="window.open('https://google.com')">
+				<img src="images/odnoklasniki.png" alt="class-icon" onclick="window.open('https://google.com')">
+				<img src="images/twitter.png" alt="tweet-icon" onclick="window.open('https://google.com')">
+				<img src="images/linkedin.png" alt="linked-icon" onclick="window.open('https://google.com')">
+				<img src="images/sometee.png" alt="t-icon" onclick="window.open('https://google.com')">
+				<img src="images/pinterest.png" alt="pinter-icon" onclick="window.open('https://google.com')">
+				<img src="images/somerobot.png" alt="robo-icon" onclick="window.open('https://google.com')">
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<menu>
+				<a href="#">войти в личный кабинет</a>
+				<a href="#">узнать больше об нбу</a>
+				<a href="#">выбрать сферу обучения</a>
+				<a href="#">узнать стоимость</a>
+				<a href="#">контакты</a>
+			</menu>
+			<p>Профессиональные курсы с 2011 года</p>
+		</div>
+	</footer>
+
+	<div id="modal-video" onclick="modalPlayerClose();">
+		<img src="images/close.png" alt="close" onclick="modalPlayerClose();">
+		<div id="player"></div>
+	</div>
+
+
+	<script>
+		var tag = document.createElement('script');
+		var player;
+		var firstScriptTag = document.getElementsByTagName('script')[0];
+
+		tag.src = "https://www.youtube.com/iframe_api";
+
+		firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+
+        function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '360',
+          width: '640',
+          videoId: 'xdRnQ3tHy1o',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+            }
+          });
+        }
+
+        function onPlayerReady(event) {
+          event.target.playVideo();
+        }
+
+        var done = false;
+
+        function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+	</script>
+	<script src="main.js"></script>
+</body>
+</html>
