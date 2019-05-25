@@ -145,13 +145,13 @@
         var done = false;
 
         function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          done = true;
+          if (event.data == YT.PlayerState.PLAYING && !done) {
+            done = true;
+          }
         }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
+        function stopVideo() {
+          player.stopVideo();
+        }
 	</script>
 	<script src="main.js"></script>
 </body>
